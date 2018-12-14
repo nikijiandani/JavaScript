@@ -1,0 +1,10 @@
+code {
+	background: #EEEEEE;
+	color: #C7314E;
+}
+.item {
+	border: 2px solid grey;
+	border-radius: 5px;
+	width: 50%;
+	padding: 1vw;
+}
