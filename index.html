@@ -26,6 +26,7 @@
 		<p>You can design constructors to accept parameters. Then pass in the values as arguments. This way, the constructor is more flexible and It's now possible to define the properties for each object at the time it is created. JavaScript constructors group objects together based on shared characteristics and behavior and define a blueprint that automates their creation.</p>
 		<p>Anytime a constructor function creates a new object, that object is said to be an instance of its constructor. JavaScript gives a convenient way to verify this with the <code>instanceof</code> operator. <code>instanceof</code> allows you to compare an object to a constructor, returning <code>true</code> or <code>false</code> based on whether or not that object was created with the constructor.</p>
 		<p><b>Own Properties</b> are properties that are defined directly on the instance object. The <code>hasOwnProperty()</code> method returns a boolean indicating whether the object has the specified property as its own property (as opposed to inheriting it).</p>
+		<p><b>Use prototype properties to reduce duplicate code.</b> The prototype is an object that is shared among all instances of the Object. Since all instances automatically have the properties on the prototype, prototype is like a "recipe" for creating objects. Nearly every object in JavaScript has a prototype property which is part of the constructor function that created it.</p>
 	</article>
 	<article class="item">
 		<time datetime="2019-01-06">Monday, January 6th, 2019</time>
