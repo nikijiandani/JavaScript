@@ -33,6 +33,7 @@
 		<p>There is a special constructor property located on the object instances. The constructor property is a reference to the constructor function that created the instance. The advantage of the constructor property is that it's possible to check for this property to find out what kind of object it is.</p>
 		<p><b>Note: Since the constructor property can be overwritten,, it's generally better to use instanceof method to check the type of an object.</b></p>
 		<p>Adding properties to the prototype individually is tedious. A more efficient way is to set the prototype to a new object that already contains the properties. This way the properties are added all at once.</p>
+		<p>There is one crucial side effect of manually setting the prototype to a new object. It erases the constructor property!</p>
 	</article>
 	<article class="item">
 		<time datetime="2019-01-06">Monday, January 6th, 2019</time>
