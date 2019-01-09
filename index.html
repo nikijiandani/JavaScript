@@ -23,6 +23,14 @@
 		<p>It's possible to override an inherited method. It's done the same way - by adding a method to <code>ChildObject.prototype</code> using the same method name as the one to override.</p>
 		<p>You can use a <code>mixin</code> to add common behavior between unrelated objects. A mixin allows other objects to use a collection of functions.</p>
 		<p>The simplest way to make properties private is by creating a variable within the constructor function. This changes the scope of that variable to be within the constructor function versus available globally. This way the property can only be accessed and changed by methods also within the constructor function. In JavaScript, a function always has access to the context in which it was created. This is called <code>closure</code>.</p>
+		<p><code>
+			(function(){
+				console.log("something...something...");
+				})();
+			</code>
+			This is an anonymous function expression that executes right away. The function has no name and is not stored in a variable. The two parantheses() at the end of the function expression cause it to be immediately executed or invoked. This pattern is known as an <code>immediately invoked function expression</code> or <code>IIFE</code>.
+		</p>
+		<p>An <code>immediately invoked function expression</code> or (<code>IIFE</code>) is often used to group related functionality into a single object or <code>module</code>. The advantage of the module pattern is that all of the behaviors can be packaged into a single object that can then be used by other parts of your code.</p>
 	</article>
 	<article class="item">
 		<time datetime="2019-01-08">Tuesday, January 8th, 2019</time>
