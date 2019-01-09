@@ -7,7 +7,11 @@
 <body>
 	<h1>JavaScript Journal</h1>
 	<article class="item">
-		<time datetime="2019-01-07">Tuesday, January 7th, 2019</time>
+		<time datetime="2019-01-09">Wednesday, January 9th, 2019</time>
+		<p></p>
+	</article>
+	<article class="item">
+		<time datetime="2019-01-08">Tuesday, January 8th, 2019</time>
 		<h3>Object Oriented Programming</h3>
 		<p>Object oriented programming organizes code into object definitions. These are sometimes called classes and they group together data with related behaviour. The data is an object's attributes and the behaviour(or functions) are methods.</p>
 		<p>The object structure makes it flexible within a program. Objects can transfer information by calling and passing data to another object's methods. Also, new classes can recieve or inherit all the features from a base or parent class. This helps to reduce repeated code.</p>
@@ -31,12 +35,13 @@
 		<p>Own properties are defined directly on the object instance itself. And prototype properties are defined on the prototype.</p>
 		<p>The <code>in</code> operator returns true if the specified property is in the specified object or its prototype chain.</p>
 		<p>There is a special constructor property located on the object instances. The constructor property is a reference to the constructor function that created the instance. The advantage of the constructor property is that it's possible to check for this property to find out what kind of object it is.</p>
-		<p><b>Note: Since the constructor property can be overwritten,, it's generally better to use instanceof method to check the type of an object.</b></p>
+		<p><b>Note: Since the constructor property can be overwritten, it's generally better to use instanceof method to check the type of an object.</b></p>
 		<p>Adding properties to the prototype individually is tedious. A more efficient way is to set the prototype to a new object that already contains the properties. This way the properties are added all at once.</p>
-		<p>There is one crucial side effect of manually setting the prototype to a new object. It erases the constructor property!</p>
+		<p>There is one crucial side effect of manually setting the prototype to a new object. It erases the constructor property! To fix this, whenever a prototype is manually set to a new object, remember to define the constructor property.</p>
+		<p>An object inherits its prototype directly from the constructor function that created it.</p>
 	</article>
 	<article class="item">
-		<time datetime="2019-01-06">Monday, January 6th, 2019</time>
+		<time datetime="2019-01-07">Monday, January 7th, 2019</time>
 		<p>The <code>parseInt()</code> funvtion parses a string argument and returns an integer of the specified radix(the base in mathematical numeral systems)</p>
 		<p>The <code>findIndex()</code> method returns the index of the first element in the array that satisfies the provided testing function. Otherwise, it returns -1, indicating no element passed the test.</p>
 		<p>The <code>concat()</code> method is used to merge two or more arrays. This method does not change the existing arrays but instead returns a new array.</p>
