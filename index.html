@@ -16,6 +16,11 @@
 		<p>The <code>Object.create()</code> method creates a new object, using an existing object as the prototype of the newly created object. Inherited properties can be overwritten.</p>
 		<p>When an object inherits its <code>prototype</code> from another object, it also inherits the <code>supertype</code>'s constructor property.</p>
 		<p>A constructor function that inherits its <code>prototype</code> object from a <code>supertype</code> constructor function can still have its own methods in addition to inherited methods.</p>
+		<p>An object can inherit its behavior(methods) from another object by cloning its <code>prototype</code> object:</p>
+		<p><code>ChildObject.prototype = Object.create(ParentObject.prototype);</code></p>
+		<p>Then the <code>ChildObject</code> received its own methods by chaining them onto its <code>prototype:</code></p>
+		<p><code>ChildObject.prototype.methodName = function() {...}</code></p>
+		<p>It's possible to override an inherited method. It's done the same way - by adding a method to <code>ChildObject.prototype</code> using the same method name as the one to override.</p>
 	</article>
 	<article class="item">
 		<time datetime="2019-01-08">Tuesday, January 8th, 2019</time>
