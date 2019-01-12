@@ -11,6 +11,8 @@
 		<p>The <code>Array.prototype.map()</code> method returns an array of the same length as the one it was called on. It also doesn't alter the original array, as long as it's callback function doesn't.</p>
 		<p>In other words, <code>map</code> is a pure function, and it's output depends solely on its inputs. Plus, it takes another function as its argument.</p>
 		<p><b>Note: A pure function is allowed to alter local variables defined within its scope, although, it's preferable to avoid that as well.</b></p>
+		<p>The <code>apply()</code> method calls a function with a given <code>this</code> value, and arguments provided as an array(or an array like object).</p>
+		<p><b>Since <code>map</code> builds a new array, using it when you aren't using the returned array is an anti-pattern; Signs you shouldn't be using map: A) Your'e not using the array it returns, and/or B) Your'e not returning a value from the callback.</b></p>
 	</article>
 	<article class="item">
 		<time datetime="2019-01-11">Friday, January 11th, 2019</time>
