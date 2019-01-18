@@ -1,3 +1,7 @@
+body {
+	margin: 1vw auto;
+	width: 90%;
+}
 code {
 	background: #EEEEEE;
 	color: #C7314E;
@@ -8,7 +12,6 @@ time {
 .item {
 	border: 2px solid grey;
 	border-radius: 5px;
-	width: 90%;
 	padding: 1vw;
-	margin: 1vw;
+	margin: 0.75vw 0;
 }
