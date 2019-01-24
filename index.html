@@ -12,6 +12,7 @@
 		<p>The <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators#Bitwise_shift_operators">bitwise shift operators</a> take two operands: the first is a quantity to be shifted, and the second specifies the number of bit positions by which the first operand is to be shifted. The direction of the shift operation is controlled by the operator used.</p>
 		<p>Bitwise shifting any number <code>x</code> to the left by <code>y</code> bits yields <code>x * 2 ** y.</code></p>
 		<p>The (Sign-propagating)right shift(>>) operator shifts the first operand the specified number of bits to the right. Excess bits shifted off to the right are discarded. Copies of the leftmost bit are shifted in from the left. Since the new leftmost bit has the same value as the previous leftmost bit, the sign bit(the leftmost bit) does not change. Hence the name "sign-propagating".</p>
+		<p>The (>>>)zero-fill right shift operator shifts the first operand the specified number of bits to the right. Excess bits shifted off to the right are discarded. Zero bits are shifted in from the left. The sign bit becomes 0, so the result is always non-negative. For non-negative numbers, zero-fill and sign-propagating right shift yield the same result.</p>
 	</article>
 	<article class="item">
 		<time datetime="2019-01-23">Wednesday, January 23rd, 2019</time>
