@@ -8,7 +8,16 @@
 	<h1>JavaScript Journal</h1>
 	<article class="item">
 		<time datetime="2019-02-11">Monday, February 11th, 2019</time>
-		<p></p>
+		<h3>forEach deepdive</h3>
+		<p><code>forEach()</code> executes the provided callback once for each element present in the array in ascending order. It is not invoked for index properties that have been deleted ir are uninitialized. The callback is invoked with <b>three arguments:</b>
+		<ul>
+			<li>the <b>element value</b></li>
+			<li>the <b>element index</b></li>
+			<li>the <b>array being traversed</b></li>
+		</ul>
+		forEach always returns the value <code>undefined</code> and is not chainable.</p>
+		<p><code>forEach()</code> does not mutate the array on which it is called(although callback, if invoked, may do so.)</p>
+		<p><b>There is no way to stop or break a <code>forEach()</code> loop other than by throwing an exception. If you need such behavior, forEach is the wrong tool.</b></p>
 	</article>
 	<article class="item">
 		<time datetime="2019-02-10">Sunday, February 10th, 2019</time>
